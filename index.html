@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="app">
-        <ul >
-            <li v-for="" > {{ email }} </li>
+        <ul v-if="email.length === 10">
+            <li v-for="(email,i) in email" @key="i" > {{email}}  </li>
             
             
         </ul>
