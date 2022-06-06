@@ -5,9 +5,12 @@ data:{
 },
 mounted(){
 axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`)
-.then(function(result){
+.then((result)=>{
     const listEmail = result.data.response;
-    console.log( listEmail);
+    console.log( listEmail); 
+    this.email = listEmail; 
+    
 });
+
 }
 });
